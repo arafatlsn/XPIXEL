@@ -1,0 +1,9 @@
+.navigation-link-container{
+  margin-left: 48rem;
+}
+
+@media screen and (max-width: 480px) {
+  .navigation-link-container{
+    margin-left: 0;
+  }
+}
