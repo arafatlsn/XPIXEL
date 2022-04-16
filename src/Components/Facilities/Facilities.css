@@ -1,0 +1,6 @@
+.facilities-container{
+  width: 60vw;
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}

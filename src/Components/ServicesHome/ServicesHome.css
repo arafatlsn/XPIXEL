@@ -1,0 +1,47 @@
+.services-home-container{
+  background-color: #F6F6F6;
+  width: 99vw;
+  margin: 4rem auto;
+  padding: 5rem 0;
+
+}
+
+.service-home-container{
+  width: 50vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.service-heading{
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hr-div{
+  width: 10vw;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.elemnetor-divider{
+  text-align: center;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #e6ae4a;
+  width: 8vw;
+}
+
+.service-home-childrens{
+  background-color: white;
+  padding: 1rem .7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.service-home-childrens:hover{
+  background-color: whitesmoke;
+}
