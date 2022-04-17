@@ -8,7 +8,9 @@ const Homepage = () => {
     <div>
       <CarouselComp></CarouselComp>
       <Facilities></Facilities>
+      <div>
       <ServicesHome></ServicesHome>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,59 @@
+.signin-container{
+  height: 80vh;
+  display: flex;
+  align-content: center ;
+}
+
+.form-parent-container{
+  width: 30vw;
+  margin: auto;
+  background-color: whitesmoke;
+  padding: 3rem 1rem 1rem;
+  border-radius: 1rem;
+}
+
+.sign-heading-div{
+  margin-bottom: 2rem ;
+}
+
+.input-field{
+  outline-color: #e6ae4a;
+}
+
+.element-divider{
+  display: flex;
+  width: 80%;
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.hr-one{
+  width: 10vw;
+  border: 2px solid #e6ae4a;
+  margin: 0 .5rem;
+}
+
+.hr-two{
+  width: 10vw;
+  border: 2px solid #e6ae4a;
+  margin: 0 .5rem;
+}
+
+@media screen and (max-width: 480px) {
+  .signin-container{
+    height: 100vh;
+    display: block;
+  }
+  .form-parent-container{
+    width: 100vw;
+    margin: auto;
+    background-color: whitesmoke;
+    padding: 3rem 1rem 1rem;
+    border-radius: 1rem;
+  }
+  .input-field{
+    padding: .5rem;
+  }
+}

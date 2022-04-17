@@ -1,0 +1,62 @@
+[
+  {
+    "id": "625bd7e89944ad50c2206202",
+    "plan": "WEDDING SESSION",
+    "price": 700,
+    "description": [
+      "1 Top Photographer + 1 Top Associate Photographer.",
+      "Event Duration: 4 Hours",
+      "Number of Pictures: Unlimited (All post processed)",
+      "Number of Photos: Unlimited (All post processed)",
+      "Specially Edited Photos: 100 copies"
+    ],
+    "images": [
+      "https://english.cdn.zeenews.com/sites/default/files/2022/04/14/1031880-ranbir-alia-pics-10.gif",
+      "https://images.hindustantimes.com/img/2021/12/09/550x309/265095191_916653865636449_766030495707137598_n_1639062416603_1639062424924.jpg",
+      "https://static.parade.com/wp-content/uploads/2020/10/wedding-dos-and-donts.jpg",
+      "https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/GettyImages-1327358895_web_498563_bzdxmu.jpg",
+      "https://static.parade.com/wp-content/uploads/2020/10/Facetune_25-02-2019-23-34-06.jpg",
+      "https://st2.depositphotos.com/1854227/6213/i/450/depositphotos_62139441-stock-photo-newlywed-couple-dancing-with-bridesmaids.jpg"
+    ]
+  },
+  {
+    "id": "625bd7e88f02dbf82c4f1e3c",
+    "plan": "STUDIO SESSION",
+    "price": 500,
+    "description": [
+      "1 Top Photographer",
+      "Event Duration: 4 Hours",
+      "Unlimited (All post processed)",
+      "Specially Edited Photos: 100 copies",
+      "Print: 4R (4”x6″) Matte Prints: 100 copies"
+    ],
+    "images": [
+      "https://briannawilbur.com/wp-content/uploads/2018/12/Christmas-Mini-Studio-Session-Lancaster-Family-Photographer06.jpg",
+      "https://www.hayesandfisk.com/wp-content/uploads/2019/02/Crowder_0166.jpg",
+      "https://www.billboard.com/wp-content/uploads/media/robyn-royksopp-02-billboard-650.jpg",
+      "https://www.nataliebuckphotography.com/wp-content/uploads/2019/02/Connecticut-Photographer-Vintage-Milestone-Baby-Session-6-months-24-1024x735.jpg",
+      "https://photogenicsonlocation.com/wp-content/uploads/2019/01/photographer_63090_washington_missouri_baby_newborn_best_of_weddings_6_month_old_sitter_session_props_dana_marquart_photogenics_on_location-1.jpg",
+      "https://photogenicsonlocation.com/wp-content/uploads/2019/01/photographer_63090_washington_missouri_baby_newborn_best_of_weddings_6_month_old_sitter_session_props_dana_marquart_photogenics_on_location-5.jpg"
+    ]
+  },
+  {
+    "id": "625bd7e86c294b21b0c1eb07",
+    "plan": "EXCLUSIVE",
+    "price": 1000,
+    "description": [
+      "1 Senior Photographer + 1 Top Associate Photographer.",
+      "Event Duration: 4 Hours",
+      "Number of Pictures: Unlimited (All post processed)",
+      "Specially Edited Photos: 100 copies",
+      "Print: 12L (12”x 18″) Matte Print: 1 copy"
+    ],
+    "images": [
+      "https://cdn0.weddingwire.in/vendor/5925/3_2/640/jpg/34728571-2163130317304770-631368314295156736-n_15_165925.webp",
+      "https://www.photosession.com.au/photography/wp-content/uploads/2021/05/Exclusive-Photography-Brisbane-2.jpg",
+      "https://images.flytographer.com/0411caa3-2d4c-4d49-a945-f61d53830362/lidiya-in-dubai-portfolio-photo-44_1024.jpeg",
+      "https://images.flytographer.com/bbb5b14a-b397-4ebd-a7dc-9b84080bc712/akemi-in-dubai-portfolio-photo-25_1024.jpeg",
+      "https://images.flytographer.com/181896fb-b55e-4753-a17a-3eb2337ea003/gabriela-in-dubai-portfolio-photo-20_1024.jpeg",
+      "https://images.flytographer.com/c9845e4f-2f8b-41d0-9c97-4c71415c5d7d/scheherazade-in-dubai-portfolio-photo-11_1024.jpeg"
+    ]
+  }
+]
