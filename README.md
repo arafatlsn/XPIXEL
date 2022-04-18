@@ -8,6 +8,8 @@ Live Website [Create React App](https://x-pixel-demo.web.app).
 
 * this website has 3 way to authentication system.
 
+* this project has a private route.
+
 * you get secure experienced. 
 
 * clean & clear customizantion, beautiful looking user friendly.
