@@ -1,10 +1,11 @@
 import React from 'react';
 import auth from '../FireBase/firebase.init';
-import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword, useSignInWithFacebook, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithEmailAndPassword, useSignInWithFacebook, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 
 const useSignIn = () => {
   // use auth state 
   const [user, loading, error] = useAuthState(auth);
+  console.log(user)
   // google signin
   const [signInWithGoogle, userGoogle, loadingGoogle, errorGoogle] = useSignInWithGoogle(auth);
   // facebook signin 

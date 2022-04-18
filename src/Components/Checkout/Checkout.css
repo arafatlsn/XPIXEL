@@ -1,0 +1,29 @@
+.checkout-address-container{
+  width: 80vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.checkout-address-heading{
+  text-align: center;
+  margin-top: 1rem ;
+}
+
+.element-seperator-checkout{
+  width: 10vw;
+  margin: 1rem auto 0 ;
+}
+
+.plan-notfound-alt{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-form-side{
+  width: 80%;
+  margin: auto;
+}

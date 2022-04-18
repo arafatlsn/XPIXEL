@@ -16,7 +16,7 @@ const ServicesHome = () => {
         </div>
         <div className='pricing-plans-container'>
           {
-            allPlans?.map(elPlan => <Plan  elPlan={elPlan} >hello js</Plan>)
+            allPlans?.map(elPlan => <Plan key={elPlan.id} elPlan={elPlan} >hello js</Plan>)
           }
         </div>
       </div>

@@ -9,14 +9,16 @@ import Signup from './Components/Signup/Signup';
 import RequireAuth from './Hooks/RequireAuth';
 import { createContext, useState } from 'react';
 
-const PlanContext = createContext()
+export const PlanContext = createContext()
 
 function App() {
 
-  const [plan, setPlan] = useState([])
+  const [ choosePlan, setPlan] = useState([])
+  console.log(choosePlan)
+
   return (
     <div>
-      <PlanContext.Provider value={{plan, setPlan}}>
+      <PlanContext.Provider value={{choosePlan, setPlan}}>
         <Header></Header>
           <Routes>
             <Route path='/' element={<Homepage></Homepage>}></Route>
