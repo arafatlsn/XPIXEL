@@ -5,7 +5,6 @@ import { useAuthState, useCreateUserWithEmailAndPassword, useSendEmailVerificati
 const useSignIn = () => {
   // use auth state 
   const [user, loading, error] = useAuthState(auth);
-  console.log(user)
   // google signin
   const [signInWithGoogle, userGoogle, loadingGoogle, errorGoogle] = useSignInWithGoogle(auth);
   // facebook signin 

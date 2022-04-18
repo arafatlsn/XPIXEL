@@ -31,3 +31,24 @@
   text-align: center;
 }
 
+@media screen and (max-width: 480px) {
+
+  .service-heading{
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .pricing-plans-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    margin: auto;
+    gap: 2rem;
+  }
+  .element-seperator-div{
+    width: 30vw;
+    margin: 1.8rem auto 2.3rem;
+  
+  }
+}
+

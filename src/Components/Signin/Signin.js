@@ -10,6 +10,8 @@ const Signin = () => {
 
   const { user, signInWithGoogle, signInWithFacebook, signInWithEmailAndPassword, errorSignInWithEmailPass, sendPasswordResetEmail } = useSignIn()
 
+  console.log(errorSignInWithEmailPass?.message)
+
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
@@ -22,7 +24,7 @@ const Signin = () => {
 
   const from = location.state?.from?.pathname || '/';
 
-  const notify = () => toast('Reset Password Link sent Your emial.')
+  const notify = () => toast('Reset Password Link sent Your E-mail.')
   
 
   if(user){
@@ -44,7 +46,7 @@ const Signin = () => {
               <label style={{color: '#e6ae4a'}} className='fs-5 fw-bold' htmlFor="password">Password</label> <br />
               <input onBlur={(e) => setPassword(e.target.value)} className='input-field p-lg-2 w-100 fw-bold' type="password" required /> <br />
               <p onClick={() => {
-                if(email.includes('@gmail.com')){
+                if(email.includes('@')){
                   sendPasswordResetEmail(email)
                   notify()
                 }
@@ -54,6 +56,9 @@ const Signin = () => {
                   signInWithEmailAndPassword(email, password)
                 }} className='fs-5 fw-bold py-1' style={{backgroundColor: '#e6ae4a', color: 'white', borderStyle: 'hidden', borderRadius: '.3rem'}} type="submit" value={'Sign-in'} />
               </div>
+              {
+                errorSignInWithEmailPass ? <p className='m-0 text-center text-danger'>{errorSignInWithEmailPass?.message}</p> : ''
+              }
             </div>
           </form>
           <div className='element-divider'>

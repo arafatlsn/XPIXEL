@@ -1,6 +1,10 @@
+.checkout-parent-container{
+  height: 90vh;
+}
+
 .checkout-address-container{
   width: 80vw;
-  margin: auto;
+  margin: 1.5rem auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -64,4 +68,42 @@
   height: 500px;
   object-fit: cover;
   margin: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .checkout-parent-container{
+    height: 100%;
+    display: block;
+  }
+  .element-seperator-checkout{
+    width: 30vw;
+    margin: 1rem auto 0 ;
+  }
+  .checkout-address-container{
+    width: 98vw;
+    margin: 1.5rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .plan-notfound-alt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .look-image-container{
+    width: 80vw;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    overflow: hidden;
+  }
+  .look-image-img{
+    width: 40vw;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    margin: 1rem;
+  }
 }

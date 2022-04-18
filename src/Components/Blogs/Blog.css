@@ -1,0 +1,11 @@
+.blogs-container{
+  width: 80vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .blogs-container{
+    width: 95vw;
+    margin: auto;
+  }
+}

@@ -6,10 +6,14 @@ import './Signup.css'
 
 const Signup = () => {
 
-  const { user, createUserWithEmailAndPassword, sendEmailVerification } = useSignIn()
+  const { user, createUserWithEmailAndPassword, sendEmailVerification, errorCreateEnP } = useSignIn()
+
+  console.log(errorCreateEnP)
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [confirmPassword, setConFirmPassword] = useState('')
+  const [checker, setChecker] = useState(true);
 
   const handleReload = e => {
     e.preventDefault()
@@ -28,6 +32,17 @@ const Signup = () => {
     notify()
   }
 
+  const handleSignUp = () => {
+    if(password !== confirmPassword){
+      setChecker(false)
+      return;
+    }
+    setChecker(true)
+    createUserWithEmailAndPassword(email, password).then(() => {
+      sendEmailVerification()
+    })
+    }
+
   return (
     <div className='signin-container'>
       <div className='form-parent-container'>
@@ -43,13 +58,12 @@ const Signup = () => {
               <label style={{color: '#e6ae4a'}} className='fs-5 fw-bold' htmlFor="password">Password</label> <br />
               <input onBlur={(e) => setPassword(e.target.value)} className='input-field p-lg-2 w-100 fw-bold' type="password" required /> <br />
               <label style={{color: '#e6ae4a'}} className='fs-5 fw-bold' htmlFor="confirm-password">Confirm Password</label> <br />
-              <input className='input-field p-lg-2 w-100 fw-bold' type="password" name='confirm-password' required /> <br />
+              <input onBlur={(e) => setConFirmPassword(e.target.value)} className='input-field p-lg-2 w-100 fw-bold' type="password" name='confirm-password' required /> <br />
+              {
+                !checker ? <p className='m-0 text-danger'>Confirm Password not match with Password</p> : ''
+              }
               <div className='d-flex flex-column mt-5'>
-                <input onClick={() =>{
-                  createUserWithEmailAndPassword(email, password).then(() => {
-                    sendEmailVerification()
-                  })
-                  }} className='fs-5 fw-bold py-1' style={{backgroundColor: '#e6ae4a', color: 'white', borderStyle: 'hidden', borderRadius: '.3rem'}} type="submit" value={'Sign-up'} />
+                <input onClick={handleSignUp} className='fs-5 fw-bold py-1' style={{backgroundColor: '#e6ae4a', color: 'white', borderStyle: 'hidden', borderRadius: '.3rem'}} type="submit" value={'Sign-up'} />
               </div>
             </div>
           </form>

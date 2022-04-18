@@ -1,0 +1,25 @@
+.footer-container-parent{
+  height: 10vh;
+  display: block;
+}
+
+.footer-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  background-color: #131416;
+  color: whitesmoke;
+  padding: 2rem 0;
+
+}
+
+@media screen and (max-width: 480px) {
+  .footer-container-parent{
+    height: 10%;
+    display: block;
+  }
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+}

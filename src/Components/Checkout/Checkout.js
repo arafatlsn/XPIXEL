@@ -18,7 +18,7 @@ const Checkout = () => {
   }
 
   return (
-    <div>
+    <div className='checkout-parent-container'>
       <h1 className='checkout-address-heading fw-bold'>YOUR PLAN</h1>
       <div className='element-seperator-checkout'>
           <p className='element-seperator m-0'></p>

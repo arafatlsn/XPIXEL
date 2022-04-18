@@ -23,7 +23,7 @@ const Plan = ({ elPlan }) => {
             </div>
             <div>
               {
-                description?.map(elDesc => <p title={elDesc} className='d-flex align-items-center'>
+                description?.map(elDesc => <p title={elDesc} className='d-flex justify-content-center justify-content-lg-start align-items-center'>
                 <BsCheckLg className='me-1' style={{color: '#e6ae4a'}}/> {elDesc.length > 20 ? elDesc.slice(0, 20) + '...' : elDesc}
               </p>)
               }

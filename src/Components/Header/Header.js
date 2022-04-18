@@ -20,8 +20,8 @@ const Header = () => {
           <Nav className="navigation-link-container">
             <Nav.Link as={Link} to={'/'} href="#features" className='fw-bold fs-5'>Home</Nav.Link>
             <Nav.Link as={Link} to={'/checkout'} className='fw-bold fs-5'>Checkout</Nav.Link>
-            <Nav.Link href="#pricing" className='fw-bold fs-5'>Blogs</Nav.Link>
-            <Nav.Link href="#pricing" className='fw-bold fs-5'>About</Nav.Link>
+            <Nav.Link as={Link} to={'/blog'} className='fw-bold fs-5'>Blogs</Nav.Link>
+            <Nav.Link as={Link} to={'/about'} className='fw-bold fs-5'>About</Nav.Link>
             {
               !user ? <Nav.Link as={Link} to={'/signin'} className='fw-bold fs-5'>Sign-in</Nav.Link> : <Nav.Link onClick={() => signOut(auth)} className='fw-bold fs-5'>Sign-out</Nav.Link>
             }
