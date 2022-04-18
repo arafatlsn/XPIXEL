@@ -12,9 +12,9 @@ const CarouselComp = () => {
             src="carousel-img1.jpg"
             alt="First slide"
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Caption className='crsl-cption-container'>
+            <h3>WEDDING</h3>
+            <p>1 Top Photographer + 1 Top Associate Photographer.Event Duration: 4 Hours. Number of Pictures: Unlimited (All post processed). Number of Photos: Unlimited (All post processed). Specially Edited Photos: 100 copies</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -24,9 +24,9 @@ const CarouselComp = () => {
             alt="Second slide"
           />
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Caption className='crsl-cption-container'>
+            <h3>STUDIO</h3>
+            <p>1 Top Photographer. Event Duration: 4 Hours. Unlimited (All post processed). Specially Edited Photos: 100 copies. Print: 4R (4”x6″) Matte Prints: 100 copies</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -36,9 +36,9 @@ const CarouselComp = () => {
             alt="Third slide"
           />
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          <Carousel.Caption className='crsl-cption-container'>
+            <h3>EXCLUSIVE</h3>
+            <p>1 Senior Photographer + 1 Top Associate Photographer. Event Duration: 4 Hours. Number of Pictures: Unlimited (All post processed). Specially Edited Photos: 100 copies. Print: 12L (12”x 18″) Matte Print: 1 copy</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
