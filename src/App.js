@@ -7,10 +7,13 @@ import Checkout from './Components/Checkout/Checkout';
 import Signin from './Components/Signin/Signin';
 import Signup from './Components/Signup/Signup';
 import RequireAuth from './Hooks/RequireAuth';
+import 'react-toastify/dist/ReactToastify.css';
 import { createContext, useState } from 'react';
+import { toast } from 'react-toastify';
 
 export const PlanContext = createContext()
 
+toast.configure()
 function App() {
 
   const [ choosePlan, setPlan] = useState([])

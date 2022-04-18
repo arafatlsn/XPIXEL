@@ -11,7 +11,7 @@ const Checkout = () => {
   const [address, setAddress] = useState('')
 
   const { choosePlan } = useContext(PlanContext);
-  const { plan, price, description } = choosePlan;
+  const { plan, price, description, images } = choosePlan;
 
   const handleReload = e => {
     e.preventDefault()
@@ -19,7 +19,7 @@ const Checkout = () => {
 
   return (
     <div>
-      <h1 className='checkout-address-heading'>Your Plan</h1>
+      <h1 className='checkout-address-heading fw-bold'>YOUR PLAN</h1>
       <div className='element-seperator-checkout'>
           <p className='element-seperator m-0'></p>
         </div>
@@ -34,7 +34,7 @@ const Checkout = () => {
           </p>)
           }
           <h4>${price}+</h4>
-        </div> : <div className='plan-notfound-alt'><p className='text-center fs-2 fw-bold'>Please choose a Plan</p></div>
+        </div> : <div className='plan-notfound-alt'><p className='text-center fs-2 fw-bold' style={{color: 'dimgray'}}>Please choose a Plan</p></div>
         }
         <div className='plan-form-side'>
         <form onSubmit={handleReload}>
@@ -50,6 +50,20 @@ const Checkout = () => {
               </div>
             </div>
           </form>
+        </div>
+      </div>
+      <div className='checkout-btn-div border'>
+        <button className='checkout-btn'>Checkout</button>
+      </div>
+      <div className='session-img-container-parent'>
+        <h2 className='text-center fw-bold'>LOOK MY PROJECT</h2>
+        <div className='element-seperator-checkout'>
+          <p className='element-seperator m-0'></p>
+        </div>
+        <div className='look-image-container'>
+          {
+            images?.map(elImag => <img className='look-image-img' src={elImag}></img>)
+          }
         </div>
       </div>
     </div>

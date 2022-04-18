@@ -4,11 +4,11 @@ import { BsFacebook } from 'react-icons/bs'
 import { FcGoogle } from 'react-icons/fc'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useSignIn from '../../Hooks/useSignIn';
-import { async } from '@firebase/util';
+import { toast } from 'react-toastify';
 
 const Signin = () => {
 
-  const { user, signInWithGoogle, signInWithFacebook, signInWithEmailAndPassword, errorSignInWithEmailPass } = useSignIn()
+  const { user, signInWithGoogle, signInWithFacebook, signInWithEmailAndPassword, errorSignInWithEmailPass, sendPasswordResetEmail } = useSignIn()
 
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -21,6 +21,8 @@ const Signin = () => {
   const location = useLocation();
 
   const from = location.state?.from?.pathname || '/';
+
+  const notify = () => toast('Reset Password Link sent Your emial.')
   
 
   if(user){
@@ -41,6 +43,12 @@ const Signin = () => {
               <input onBlur={(e) => setEmail(e.target.value)} className='input-field p-lg-2 w-100 fw-bold' type="email" name='email' required /> <br />
               <label style={{color: '#e6ae4a'}} className='fs-5 fw-bold' htmlFor="password">Password</label> <br />
               <input onBlur={(e) => setPassword(e.target.value)} className='input-field p-lg-2 w-100 fw-bold' type="password" required /> <br />
+              <p onClick={() => {
+                if(email.includes('@gmail.com')){
+                  sendPasswordResetEmail(email)
+                  notify()
+                }
+              }} className='forget-password-text'>Forget Password?</p>
               <div className='d-flex flex-column mt-5'>
                 <input onClick={() => {
                   signInWithEmailAndPassword(email, password)

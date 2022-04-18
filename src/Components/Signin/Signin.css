@@ -41,6 +41,15 @@
   margin: 0 .5rem;
 }
 
+.forget-password-text{
+  cursor: pointer;
+  color: #0d6efd;
+}
+
+.forget-password-text:hover{
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 480px) {
   .signin-container{
     height: 100vh;
