@@ -13,6 +13,7 @@ import { toast } from 'react-toastify';
 import Blog from './Components/Blogs/Blog';
 import Footer from './Components/Footer/Footer';
 import About from './Components/About/About';
+import NotFound from './Components/NotFound/NotFound';
 
 export const PlanContext = createContext()
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='/signin' element={<Signin></Signin>}></Route>
             <Route path='/signup' element={<Signup></Signup>}></Route>
             <Route path='/about' element={<About></About>}></Route>
+            <Route path='*' element={<NotFound></NotFound>}></Route>
           </Routes>
           <Footer></Footer>
       </PlanContext.Provider>
